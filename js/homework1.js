@@ -13,20 +13,15 @@ alert(string);
 
 
 // Task 4 
-let str = "name";
-console.log( typeof str);
 
-let number = 22;
-console.log(typeof number);
-
-//boolean
-console.log(3*3 == 9);
-
-let age;
-console.log(typeof age);
-
-let something = null;
-console.log(typeof something);
+let obj = {
+   str: "name",
+   num: 22,
+   bool: true,
+   und: undefined,
+   nl: null
+};
+console.log(obj);
 
 
 // Task 5
@@ -36,14 +31,14 @@ console.log(isAdult);
 
 // Task 6
 
-let Name = "Andriy";
+let name = "Andriy";
 let surname = "Ryzhak";
 let groop = "654 JS Core";
 let birthday = 1998;
 const isMarried = false;
 console.log(typeof birthday);
 console.log(typeof isMarried);
-console.log(typeof Name);
+console.log(typeof name);
 
 let age = 22;
 age = null;
@@ -62,8 +57,8 @@ alert(`Dear ${login}, your email is ${email}, your password is ${password}`);
 
 //Task 8
 
-let Hour = prompt("Введіть кількість годин","");
-alert(`В цій кількості годин ${Hour * 60 * 60} секунд`);
+let hour = prompt("Введіть кількість годин","");
+alert(`В цій кількості годин ${hour * 60 * 60} секунд`);
 
 let day = prompt("Введіть кількість днів","");
 alert(`В цій кількості днів ${day * 60 * 60 * 24} секунд`);
