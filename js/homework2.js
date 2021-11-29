@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 //Task 1
 
@@ -26,20 +26,18 @@ console.log(typeof res4);
 
 
 //Task 2
- let reply;
- let answer = prompt("Введіть число", "");
- if (+answer / 7) {
-     console.log(true);
- } else if (+answer % 2) {
-    console.log(true);
- } else {
-    console.log(false);
- }
-  
-  //доробити
 
+let a = prompt("Введіть число", "");
+if ( a % 2 == 0 ) {
+    console.log( "multiple of two" );
+} else if ( a % 7 == 0) {
+   console.log( "divided into seven" );
+} else {
+   console.log( "bad number" );
+}
 
 //Task 3
+
 const answers = [];
 
 answers[0] = 5;
@@ -57,10 +55,12 @@ alert(answers);
 
 
 //Task 4
+
 let cities = ["Rome", "Lviv", "Warsaw"]; 
-console.log(cities);
+console.log(cities.join('*'));
 
 // Task 5
+
 let isAdult;
 let age = prompt("Введіть свій вік", "");
 
@@ -71,5 +71,17 @@ if (age >= 18) {
 }
 alert(isAdult);
 
+
 //Task 6 
+
+let a = parseInt(prompt("Введіть першу сторону","")),
+    b = parseInt(prompt("Введіть другу сторону","")),
+    c = parseInt(prompt("Введіть третю сторону",""));
+
+let s = (a + b + c) / 2;
+let value = Math.sqrt( s * (s - a) * (s - b) * (s - c));
+console.log(value);
+// доробити
+
+// Task 7
 
