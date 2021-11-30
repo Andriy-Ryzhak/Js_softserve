@@ -72,7 +72,7 @@ if (age >= 18) {
 alert(isAdult);
 
 
-//Task 6 
+// Task 6 
 
 let a = parseInt(prompt("Введіть першу сторону","")),
     b = parseInt(prompt("Введіть другу сторону","")),
@@ -80,8 +80,29 @@ let a = parseInt(prompt("Введіть першу сторону","")),
 
 let s = (a + b + c) / 2;
 let value = Math.sqrt( s * (s - a) * (s - b) * (s - c));
-console.log(value);
-// доробити
+console.log(Math.floor(value * 1000) / 1000 );
+
+let leg = c**2;
+let hypotenuse = a**2 + b**2;
+if (leg == hypotenuse) {
+    console.log("Цей трикутник є прямокутним");
+} else {
+    console.log("Цей трикутник не є прямокутним");
+} 
+
+// Не знаю як прикрутити валідацію
 
 // Task 7
 
+let hour = new Date();
+
+if (hour < 5 || hour > 11) {
+  alert( "Доброго ранку" );
+} else if (hour < 11 || hour > 17) {
+    alert("Доброго дня");
+} else if (hour < 17 || hour > 23) {
+    alert("Доброго вечора");
+} else if (hour < 23 || hour > 5) {
+    alert("Доброї ночі");
+}
+    
