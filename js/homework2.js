@@ -95,6 +95,7 @@ if (leg == hypotenuse) {
 // Task 7
 
 let hour = new Date();
+hour = date.getHours()
 
 if (hour < 5 || hour > 11) {
   alert( "Доброго ранку" );
