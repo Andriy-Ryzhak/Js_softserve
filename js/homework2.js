@@ -90,20 +90,18 @@ if (leg == hypotenuse) {
     console.log("Цей трикутник не є прямокутним");
 } 
 
-// Не знаю як прикрутити валідацію
 
 // Task 7
 
-let hour = new Date();
-hour = date.getHours()
+let hour = new Date().getHours();
 
-if (hour < 5 || hour > 11) {
-  alert( "Доброго ранку" );
-} else if (hour < 11 || hour > 17) {
+if (hour >= 23 && hour <= 24 || hour >= 0 && hour <= 5) {
+  alert( "Доброго ночі" );
+} else if (hour >= 6 && hour <= 11) {
+    alert("Доброго ранку");
+} else if (hour >= 12 && hour <= 17) {
     alert("Доброго дня");
-} else if (hour < 17 || hour > 23) {
-    alert("Доброго вечора");
-} else if (hour < 23 || hour > 5) {
-    alert("Доброї ночі");
+} else if (hour >= 18 && hour <= 22) {
+    alert("Доброї вечора");
 }
     
