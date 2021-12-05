@@ -28,7 +28,7 @@ console.log(typeof res4);
 //Task 2
 
 let a = prompt("Введіть число", "");
-if ( a % 2 == 0 ) {
+if ( a % 2 == 0 && a > 0) {
     console.log( "multiple of two" );
 } else if ( a % 7 == 0) {
    console.log( "divided into seven" );
