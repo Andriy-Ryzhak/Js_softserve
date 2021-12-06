@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 
 // Task 1
 // for
@@ -22,7 +22,7 @@ console.log(value);
 // Task 2
 
 for (let i = 0; i <= 15; i++) { 
-    if (i % 2) {
+    if (i % 2 == 0) {
         console.log(i + " is odd");
     } else {
         console.log(i + " is even");
@@ -44,8 +44,11 @@ function randArray(min, max) {
 // Task 4 
 
 function raiseToDegree() {
-    const a = prompt("enter 1 number"),
-          b = prompt("enter 2 number");
+    const a = prompt("enter 1 number",""),
+          b = prompt("enter 2 number","");
+     if (Number.isInteger(a) && Number.isInteger(b)){
+         console.log("Use integer number, please");
+      }
     let val = a**b;
     return(val);
   }

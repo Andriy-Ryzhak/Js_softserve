@@ -15,4 +15,7 @@ try {
 } catch (error) {
   console.log("error");
 }
+
+
+// Task 2
   
