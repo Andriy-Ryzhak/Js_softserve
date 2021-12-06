@@ -1,7 +1,7 @@
 "use strict";
 
 // Task 1
-
+// for
 let Array = [2, 3, 4, 5];
 let total = 1;
 for (let i = 0; i < Array.length; ++i) {
@@ -9,6 +9,15 @@ for (let i = 0; i < Array.length; ++i) {
 }
 console.log(total);
 
+// while
+let array = [2, 3, 4, 5];
+let value = 1;
+let i = 0;
+while (i < array.length) {
+    value *= array[i];
+    i++;
+}
+console.log(value);
 
 // Task 2
 
