@@ -64,25 +64,30 @@ function findMin() {
 // Task 6
 
 function findUnique(arr) {
-    let result = [];
-  
-    for (let num of arr) {
-      if (!result.includes(num)) {
-        result.push(num);
+  let x = arr.length;
+  for (let i = 0; i < x; i++) {
+    for (let j = (i + 1); j < x; j++) { 
+      if (arr [i] === arr [j]) {
+       return false; 
       }
-    }
-    return result;
+   }
   }
-  let number = [1, 2, 3, 5, 3];
-      numbers = [1, 2, 3, 5, 11];
-  
-  console.log( findUnique(number) );
-  console.log( findUnique(numbers) );
+  return true;
+}
+console.log (findUnique ([1, 2, 3, 5, 3]));
+console.log (findUnique([1, 2, 3, 5, 11]));  
 
 // Task 7
-let lastElem = [3, 4, 10, -5]
-let last_element = lastElem[lastElem.length - 1];
-    console.log(last_element);
+function lastElem(arr, count) {
+  if (count == 0 || isNaN(count)) return arr[arr.length - 1];
+  if (count >= arr.length) return arr;
+
+  return arr.slice(-Math.abs(count));
+}
+
+console.log(lastElem([3, 4, 10, -5]));
+console.log(lastElem([3, 4, 10, -5], 2));
+console.log(lastElem([3, 4, 10, -5], 8));
 
 // Task 8
 
