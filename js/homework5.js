@@ -178,7 +178,7 @@ class Circle extends GeometricFigure {
 function handleFigures(figures) {
     return (figures.reduce((acc,fig) => {
         if (fig instanceof GeometricFigure) {
-            console.log("Geometric figure "+ className + fig.getArea());
+            console.log("Geometric figure "+ fig.getArea());
             return acc + fig.getArea();
         } else {
             return acc;
