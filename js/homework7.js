@@ -113,5 +113,34 @@ function mouseOutFunction() {
     screenMonitoring();
 
 
+// Task 7 
 
+const cityArr = {
+    "ger": ["Hannover", "Leipzig", "Nurnberg", "Munchen"],
+    "usa": ["Philadelphia", "San Francisco", "Las Vegas", "los Angeles"],
+    "ukr": ["Lviv", "Kyiv", "Uzhhorod", "Ivano-Frankivsk"]
+};
+
+let prime_select = document.getElementById("country");
+prime_select.addEventListener('change', createList);
+prime_select.addEventListener('change', toParagraph);
+
+let city_select = document.getElementById('cities');
+city_select.addEventListener('change', toParagraph);
+
+function createList() {
+    city_select.innerHTML = '';
+    let selected_country = prime_select.value;
+    for (let i = 0; i < cityArr[selected_country].length; i++) {
+        let new_option = document.createElement('option');
+        new_option.innerHTML = cityArr[selected_country][i];
+        city_select.appendChild(new_option);
+    }
+}
+
+let parag = document.querySelector('p');
+function toParagraph() {
+    parag.innerHTML = '';
+    parag.innerHTML = prime_select.options[prime_select.selectedIndex].text + ", " + city_select.options[city_select.selectedIndex].text;
+}
     
