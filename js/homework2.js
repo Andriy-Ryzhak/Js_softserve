@@ -27,10 +27,10 @@ console.log(typeof res4);
 
 //Task 2
 
-let a = prompt("Введіть число", "");
-if ( a % 2 == 0 && a > 0) {
+let userNumber = prompt("Введіть число", "");
+if ( userNumber % 2 == 0 && userNumber > 0) {
     console.log( "multiple of two" );
-} else if ( a % 7 == 0) {
+} else if (userNumber % 7 == 0) {
    console.log( "divided into seven" );
 } else {
    console.log( "bad number" );
@@ -106,19 +106,19 @@ if (hour >= 23 && hour <= 24 || hour >= 0 && hour <= 5) {
 }
     
 
-let hour = new Date().getHours();
+let hourTwo = new Date().getHours();
 
 switch (true) {
-    case hour >= 23 && hour <= 24 || hour >= 0 && hour <= 5:
+    case hourTwo >= 23 && hourTwo <= 24 || hourTwo >= 0 && hourTwo <= 5:
         alert('Доброї ночі');
         break;
-    case hour >= 6 && hour <= 11:
+    case hourTwo >= 6 && hourTwo <= 11:
         alert('Доброго ранку');
         break;
-    case hour >= 12 && hour <= 17:
+    case hourTwo >= 12 && hourTwo <= 17:
         alert('Доброго дня');
         break;
-    case hour >= 18 && hour <= 22:
+    case hourTwo >= 18 && hourTwo <= 22:
         alert('Доброго вечора');
         break;
 }

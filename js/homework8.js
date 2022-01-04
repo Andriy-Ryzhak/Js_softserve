@@ -63,7 +63,7 @@ function checkCard (numberCard) {
     } else {
         console.log("Bad number Card");
     }
-};
+}
 
 checkCard(numberCard);
 
