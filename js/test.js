@@ -31,17 +31,17 @@
 
 
 
-const arr = [1,2,3,4,5];
-const res = arr.reduce((acc,rec) => acc * rec);
-console.log(res);
+// const arr = [1,2,3,4,5];
+// const res = arr.reduce((acc,rec) => acc * rec);
+// console.log(res);
     
 
-const array = [1,2,3,4,5,6];
-let one = 1;
-for (let i = 0; i < array.length; i++) {
-    one = one * array[i];
-}
-console.log(one);
+// const array = [1,2,3,4,5,6];
+// let one = 1;
+// for (let i = 0; i < array.length; i++) {
+//     one = one * array[i];
+// }
+// console.log(one);
 
 
 
